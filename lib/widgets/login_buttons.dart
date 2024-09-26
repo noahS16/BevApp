@@ -68,12 +68,12 @@ class EmailLoginButton extends LoginWithButton {
         );
 }
 
-class PlainLoginButton extends StatelessWidget {
+class PlainButton extends StatelessWidget {
   final VoidCallback onPressed;
   final String text;
   final Color buttonColor;
 
-  const PlainLoginButton({
+  const PlainButton({
     super.key,
     required this.onPressed,
     this.text = 'Login',
@@ -101,7 +101,7 @@ class PlainLoginButton extends StatelessWidget {
   }
 }
 
-class CreateProfileButton extends PlainLoginButton{
+class CreateProfileButton extends PlainButton{
   const CreateProfileButton({
     super.key, 
     required super.onPressed, 
