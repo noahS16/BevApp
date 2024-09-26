@@ -22,7 +22,7 @@ class EmailScreen extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 0),
               child: EmailField(),
             ),
-            PlainLoginButton(onPressed: () {}, text: 'Login'),
+            PlainButton(onPressed: () {}, text: 'Login'),
           ]),
         ));
   }
@@ -54,7 +54,7 @@ class EmailScreen extends StatelessWidget {
                 const SizedBox(height: 15),
                 const PasswordField(),
                 const SizedBox(height: 20),
-                PlainLoginButton(
+                PlainButton(
                   onPressed: () {},
                 ),
                 const Padding(
